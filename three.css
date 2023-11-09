@@ -374,22 +374,83 @@ header {
 }
 
 .footer-container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 20px auto;
+  padding-top: 40px;
+  background-color: #f2f2f2;
 }
 
 .footer-top {
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 30px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
+}
+
+.company {
+  color: #da4444;
+  display: inline;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 32.5px;
+  text-align: left;
 }
 
 .social-icon-container {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 5px;
+  padding-bottom: 5x;
+}
+
+.footer-section {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.item-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-title {
+  color: #2a2a2a;
+  display: inline;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 27.5px;
+  text-align: left;
+}
+
+.item-content {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24.5px;
+  margin: 0 0 20px;
+  padding: 20px 0;
+}
+
+.item-container a {
+  color: black;
+  padding: 20px 0;
+}
+
+.tel {
+  margin: 0 0 20px;
+}
+
+.address {
+  color: black;
 }
 @media screen and (min-width: 768px) {
   .about-container {
@@ -463,6 +524,33 @@ header {
     flex-direction: row;
     justify-content: space-around;
   }
+  .footer-container {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .company {
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 43.75px;
+
+    padding-bottom: 30px;
+  }
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+  }
+  .item-container {
+    width: 30%;
+  }
 }
 
 @media screen and (min-width: 993px) {
@@ -507,8 +595,8 @@ header {
     width: 70%;
   }
   .footer-container {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 30px auto;
   }
 
   .footer-top {
@@ -516,5 +604,24 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+  }
+  .company {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 30px;
+    padding-bottom: 30px;
+  }
+  .item-title {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 20px;
+  }
+  .item-content {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24.5px;
+    margin: 0 0 20px;
   }
 }
