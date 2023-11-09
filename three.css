@@ -134,15 +134,24 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+  position: relative;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
 }
 
 .header-container {
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding: 20px 40px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .logo {
@@ -159,10 +168,10 @@ body {
 }
 
 .about-container {
-  max-width: 100%;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
+  margin: 0 auto;
 }
 
 .about-title h1 {
@@ -312,6 +321,76 @@ body {
   text-align: left;
 }
 
+.policy-container {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.policy-title {
+  color: #c23b3b;
+  font-size: 24px;
+  letter-spacing: 3px;
+  line-height: 30px;
+  margin: 0 0 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.policy-content {
+  font-weight: 500;
+  line-height: 28px;
+  font-size: 16px;
+  margin: 0 0 30px;
+}
+
+.link-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.link-container a {
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 12px;
+  line-height: 12px;
+  border: 1px solid black;
+}
+
+.link-container .food {
+  background-color: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  display: inline-block;
+  padding: 14px 30px;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.social-icon-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 @media screen and (min-width: 768px) {
   .about-container {
     width: 100%;
@@ -378,6 +457,12 @@ body {
   .sub-intro-content {
     padding-bottom: 20px;
   }
+  .link-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (min-width: 993px) {
@@ -410,5 +495,26 @@ body {
   .about-container {
     width: 100%;
     margin: 0 auto;
+  }
+  .paragraph {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .intro-image {
+    width: 25%;
+  }
+  .sub-intro-container {
+    width: 70%;
+  }
+  .footer-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
