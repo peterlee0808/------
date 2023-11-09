@@ -179,6 +179,7 @@ header {
   margin: 0 0 10px;
   color: #8d2424;
   text-align: center;
+  padding-top: 80px;
 }
 
 .paragraph {
@@ -216,6 +217,7 @@ header {
   padding: 30px 20px;
   background-color: #f6f2e5;
   gap: 5px;
+  margin-top: 50px;
 }
 
 .fruit-pic {
