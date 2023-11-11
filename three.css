@@ -144,19 +144,23 @@ header {
 }
 
 .header-container {
-  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 20px;
+  padding: 20px;
 }
 
 .logo {
   width: 145px;
   height: 40px;
+}
+
+.logo:hover {
+  color: #eca49b;
+  cursor: pointer;
 }
 
 .menubar i {
@@ -165,6 +169,18 @@ header {
 
 .nav {
   display: none;
+}
+
+.nav a:hover {
+  cursor: pointer;
+  color: #666666;
+}
+
+.about {
+  background-image: url(pic/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
 }
 
 .about-container {
@@ -183,7 +199,7 @@ header {
 }
 
 .paragraph {
-  padding-top: 80px;
+  padding: 80px 0 40px 0;
 }
 
 .sub-title {
@@ -206,6 +222,9 @@ header {
 }
 
 /* fruit */
+.fruit {
+  background-color: #f6f2e5;
+}
 
 .fruit-container {
   width: 100%;
@@ -214,21 +233,24 @@ header {
   grid-template-rows: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
-  padding: 30px 20px;
+  padding: 40px 20px;
   background-color: #f6f2e5;
   gap: 5px;
-  margin-top: 50px;
 }
 
 .fruit-pic {
   width: 100%;
 }
 
+.fruit-pic {
+  cursor: pointer;
+}
+
 .main-container {
   padding: 30px 0px;
   width: 90vw;
   margin: 0 auto;
-  width: 90%;
+  width: 80%;
 }
 
 .main-title {
@@ -365,14 +387,9 @@ header {
   border: 1px solid black;
 }
 
-.link-container .food {
+.link-container a:hover {
   background-color: #ffffff;
   color: #000000;
-  text-decoration: none;
-  display: inline-block;
-  padding: 14px 30px;
-  font-size: 12px;
-  line-height: 12px;
 }
 
 footer {
@@ -417,6 +434,11 @@ footer {
   padding-bottom: 5x;
 }
 
+.social-icon:hover {
+  cursor: pointer;
+  color: #616161;
+}
+
 .footer-section {
   width: 90%;
   margin: 0 auto;
@@ -455,8 +477,16 @@ footer {
   margin: 0 0 20px;
 }
 
+.tel:hover {
+  color: #616161;
+}
+
 .address {
   color: black;
+}
+
+.address {
+  color: #616161;
 }
 
 .rights {
@@ -494,9 +524,10 @@ footer {
     grid-template-rows: 1fr;
     justify-content: center;
     align-items: center;
-    padding: 30px 20px;
+    padding: 40px 30px;
     gap: 10px;
   }
+
   .main-container {
     display: flex;
     flex-direction: column;
@@ -512,7 +543,7 @@ footer {
   .main-card {
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 40px;
   }
   .intro-container {
     display: flex;
@@ -558,7 +589,6 @@ footer {
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 43.75px;
-
     padding-bottom: 30px;
   }
   .footer-section {
@@ -566,7 +596,7 @@ footer {
     flex-direction: row;
   }
   .item-container {
-    width: 30%;
+    width: 100%;
   }
   .rights {
     font-size: 10.5px;
@@ -581,21 +611,28 @@ footer {
   }
   .nav {
     display: unset;
+    width: 65%;
   }
   .nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 30px;
+    flex-wrap: wrap;
   }
   .nav a {
     text-decoration: none;
     color: black;
+    /* padding: 12px 10px; */
   }
   .sub-title {
     font-size: 18px;
     line-height: 31.5px;
+  }
+
+  .fruit-container {
+    padding: 60px 40px;
   }
   .content {
     font-size: 16px;
@@ -647,10 +684,58 @@ footer {
     margin: 0 0 20px;
   }
   .footer-container {
-    margin: 30px 0 0 0;
+    margin: 100px 0 0 0;
   }
   .rights {
     font-size: 13px;
     line-height: 22.75px;
+  }
+  .main-title {
+    font-weight: 500;
+    line-height: 28px;
+    font-size: 18px;
+    margin-top: 70px;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .nav {
+    width: 45%;
+  }
+  .paragraph {
+    width: 55%;
+  }
+  .about-container {
+    width: 80%;
+  }
+
+  .fruit-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .main-container {
+    width: 50%;
+    margin: 0 auto;
+    /* max-width: 1200px; */
+  }
+  .intro-container {
+    width: 50%;
+  }
+  .footer-container {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+  .policy-container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .about-title h1 {
+    letter-spacing: 0.6rem;
+  }
+  .paragraph {
+    padding: 60px 0 80px 0;
   }
 }
